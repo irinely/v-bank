@@ -1,0 +1,22 @@
+.input {
+	border: solid 2px $color-geyser;
+	border-radius: 1px;
+	padding: 0 26px;
+	height: 72px;
+	font-family: $font-family-roboto;
+	font-size: 32px;
+	line-height: 32px;
+	color: $color-black;
+	background-color: $color-white;
+	transition: border-color 0.2s;
+
+	&::placeholder {
+		color: $color-silver-chalice;
+		opacity: 1;
+	}
+
+	&:focus {
+		outline: none;
+		border-color: $color-denim;
+	}
+}

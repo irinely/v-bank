@@ -1,0 +1,26 @@
+.field {
+	margin-bottom: 28px;
+
+	&__label {
+		display: block;
+		margin-bottom: 12px;
+		font-size: 19px;
+		line-height: 24px;
+	}
+
+	&__input {
+		display: block;
+		width: 100%;
+	}
+
+	&__tip {
+		margin-top: 12px;
+		font-size: 20px;
+		line-height: 24px;
+		color: $color-silver-chalice;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
