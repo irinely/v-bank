@@ -23,7 +23,7 @@ form.form(method="POST")
 
 		.field
 			label.field__checkbox.checkbox(tabindex="0")
-				input.checkbox__input(type="checkbox" name="surname-changed")
+				input.checkbox__input(type="checkbox" name="surname-changed" tabindex="-1")
 				.checkbox__mark
 				.checkbox__text
 					| Фамилия изменялась?
@@ -75,7 +75,7 @@ form.form(method="POST")
 
 		.field
 			label.field__checkbox.checkbox(tabindex="0")
-				input.checkbox__input(type="checkbox" name="registration-same-as-residence")
+				input.checkbox__input(type="checkbox" name="registration-same-as-residence" tabindex="-1")
 				.checkbox__mark
 				.checkbox__text
 					| Место регистрации совпадает с&nbsp;местом проживания?
