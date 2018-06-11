@@ -1,0 +1,68 @@
+.form
+	.container
+		.field
+			label.field__label(for="input-name")
+				| Имя
+			input.field__input.input#input-name(type="text" name="name")
+			.field__tip
+				| Укажите точно как в паспорте
+
+		.field
+			label.field__label(for="input-surname")
+				| Фамилия
+			input.field__input.input#input-surname(type="text" name="surname")
+			.field__tip
+				| Укажите точно как в паспорте
+
+		.field
+			label.field__label(for="input-patronymic")
+				| Отчество
+			input.field__input.input#input-patronymic(type="text" name="patronymic")
+			.field__tip
+				| Укажите точно как в паспорте. Если отчество отсутствует - поставьте прочерк
+
+		.field
+			label.field__checkbox.checkbox(tabindex="0")
+				input.checkbox__input(type="checkbox" name="surname-changed")
+				.checkbox__mark
+				.checkbox__text
+					| Фамилия изменялась?
+
+		.field
+			label.field__label(for="input-date-of-birth")
+				| Дата рождения
+			input.field__input.input#input-date-of-birth(type="text" name="date-of-birth" placeholder="00.00.0000")
+			.field__tip
+				| Укажите точно как в паспорте
+
+		.field
+			label.field__label(for="input-place-of-birth")
+				| Дата рождения
+			input.field__input.input#input-place-of-birth(type="text" name="place-of-birth")
+			.field__tip
+				| Укажите точно как в паспорте
+
+		.field
+			label.field__label(for="input-passport")
+				| Дата рождения
+			input.field__input.input#input-passport(type="text" name="passport" placeholder="серия / номер")
+
+		.field
+			label.field__label(for="input-department-code")
+				| Дата рождения
+			input.field__input.input#input-department-code(type="text" name="department-code" placeholder="000")
+
+		.field
+			label.field__label(for="input-date-of-issue")
+				| Дата выдачи пасспорта
+			input.field__input.input#input-date-of-issue(type="text" name="date-of-issue" placeholder="00.00.0000")
+
+		.field
+			label.field__label(for="input-snils")
+				| СНИЛС
+			input.field__input.input#input-snils(type="text" name="snils" placeholder="000 000 000")
+
+		.field
+			label.field__label(for="input-place-of-registration")
+				| Место регистрации
+			input.field__input.input#input-place-of-registration(type="text" name="place-of-registration")
