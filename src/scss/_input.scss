@@ -8,7 +8,7 @@
 	line-height: 32px;
 	color: $color-black;
 	background-color: $color-white;
-	transition: border-color 0.2s;
+	transition: border-color 0.2s ease;
 
 	&::placeholder {
 		color: $color-silver-chalice;
@@ -18,5 +18,13 @@
 	&:focus {
 		outline: none;
 		border-color: $color-denim;
+	}
+
+	&--error {
+		border-color: $color-mojo;
+
+		&:focus {
+			border-color: $color-mojo;
+		}
 	}
 }

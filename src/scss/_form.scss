@@ -1,9 +1,30 @@
 .form {
 	padding: 80px 0;
 
-	&__button {
-		display: block;
-		margin: 116px auto 0;
-		width: 354px;
+	&__footer {
+		display: flex;
+		justify-content: center;
+		margin-top: 116px;
+
+		&__button-prev {
+			margin: 0 16px;
+			padding: 0;
+			width: 72px;
+
+			svg {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-top: (26px / -2);
+				margin-left: (33px / -2);
+				width: 33px;
+				height: 26px;
+			}
+		}
+
+		&__button-next {
+			margin: 0 16px;
+			width: 354px;
+		}
 	}
 }

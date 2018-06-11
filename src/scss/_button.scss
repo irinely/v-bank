@@ -1,5 +1,7 @@
 .button {
+	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	border: solid 2px;
 	padding: 18px 10px;
 	height: 72px;
@@ -10,6 +12,13 @@
 	background: 50% 50% no-repeat;
 	transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 	cursor: pointer;
+
+	svg {
+		display: block;
+		max-width: 100%;
+		max-height: 100%;
+		transition: fill 0.2s ease, stroke 0.2s ease;
+	}
 
 	&--loading {
 		font-size: 0;
@@ -29,6 +38,11 @@
 		color: $color-white;
 		background-color: $color-bali-hai;
 
+		svg {
+			fill: $color-white;
+			stroke: $color-white;
+		}
+
 		&:hover {
 			border-color: $color-slate-gray;
 			background-color: $color-slate-gray;
@@ -45,8 +59,18 @@
 		color: $color-slate-gray;
 		background-color: transparent;
 
+		svg {
+			fill: $color-slate-gray;
+			stroke: $color-slate-gray;
+		}
+
 		&:hover {
 			color: $color-curious-blue;
+
+			svg {
+				fill: $color-curious-blue;
+				stroke: $color-curious-blue;
+			}
 		}
 	}
 
@@ -54,6 +78,11 @@
 		border-color: $color-mojo;
 		color: $color-white;
 		background-color: $color-mojo;
+
+		svg {
+			fill: $color-white;
+			stroke: $color-white;
+		}
 
 		&:hover {
 			border-color: $color-stiletto;
@@ -71,16 +100,31 @@
 		color: $color-mojo;
 		background-color: transparent;
 
+		svg {
+			fill: $color-mojo;
+			stroke: $color-mojo;
+		}
+
 		&:hover {
 			border-color: $color-mojo;
 			color: $color-white;
 			background-color: $color-mojo;
+
+			svg {
+				fill: $color-white;
+				stroke: $color-white;
+			}
 		}
 
 		&:active {
 			border-color: $color-stiletto;
 			color: $color-white;
 			background-color: $color-stiletto;
+
+			svg {
+				fill: $color-white;
+				stroke: $color-white;
+			}
 		}
 	}
 }
