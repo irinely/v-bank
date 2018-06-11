@@ -1,0 +1,11 @@
+extends pug/base
+
+append vars
+	- title = 'Шаг 1 из 5. Персональные данные'
+
+block content
+	include pug/header
+	include pug/card-info
+	include pug/progress
+	include pug/step-1
+	include pug/footer
