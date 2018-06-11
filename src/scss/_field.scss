@@ -14,6 +14,16 @@
 			line-height: inherit;
 			color: $color-mojo;
 		}
+
+		a {
+			border-bottom: solid 1px $color-denim;
+			text-decoration: none;
+			transition: border-color 0.2s ease, color 0.2s ease;
+
+			&:hover {
+				border-bottom-color: $color-curious-blue;
+			}
+		}
 	}
 
 	&__input {
@@ -28,6 +38,16 @@
 		font-size: 20px;
 		line-height: 24px;
 		color: $color-silver-chalice;
+
+		a {
+			border-bottom: solid 1px $color-denim;
+			text-decoration: none;
+			transition: border-color 0.2s ease, color 0.2s ease;
+
+			&:hover {
+				border-bottom-color: $color-curious-blue;
+			}
+		}
 	}
 
 	&:last-child {

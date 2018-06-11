@@ -45,6 +45,16 @@
 	&__text {
 		font-size: 19px;
 		line-height: 24px;
+
+		a {
+			border-bottom: solid 1px $color-denim;
+			text-decoration: none;
+			transition: border-color 0.2s ease, color 0.2s ease;
+
+			&:hover {
+				border-bottom-color: $color-curious-blue;
+			}
+		}
 	}
 
 	&:focus {
