@@ -1,0 +1,11 @@
+extends pug/base
+
+append vars
+	- title = 'Шаг 1 из 5. Подтверждение'
+
+block content
+	include pug/header
+	include pug/card-info
+	+progress(1.2)
+	include pug/step-1-2
+	include pug/footer

@@ -70,6 +70,12 @@
 		}
 	}
 
+	&--step-4-2 {
+		.progress__passed {
+			width: percentage(800 / 960);
+		}
+	}
+
 	&--step-5 {
 		.progress__passed {
 			width: percentage(960 / 960);

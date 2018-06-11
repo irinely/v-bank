@@ -1,0 +1,11 @@
+extends pug/base
+
+append vars
+	- title = 'Заявка отправлена'
+
+block content
+	include pug/header
+	include pug/card-info
+	+progress(5)
+	include pug/step-5
+	include pug/footer

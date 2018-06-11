@@ -1,0 +1,14 @@
+form.form(method="POST")
+	.container
+		.field
+			label.field__label(for="input-code")
+				| Введите код
+			input.field__input.input#input-code(type="text" name="code")
+			.field__tip
+				| Код формируется автоматически и&nbsp;направляется на&nbsp;номер телефона или адрес&nbsp;эл. почты (определиться), указанные заявителем после нажатия кнопки &laquo;Продолжить&raquo;
+
+		.form__footer
+			a.form__footer__button-prev.button.button--gray-ghost(href="#")
+				+svg("arrow-left")
+			button.form__footer__button-next.button.button--red(type="submit")
+				| Продолжить

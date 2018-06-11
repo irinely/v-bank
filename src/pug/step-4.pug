@@ -1,0 +1,31 @@
+form.form(method="POST")
+	.container
+		.field
+			label.field__label(for="input-amount-of-credit")
+				| Сумма кредита
+			input.field__input.input#input-amount-of-credit(type="text" name="amount-of-credit")
+			.field__tip
+				| Указываемая сумма в&nbsp;рублях
+
+		.field
+			label.field__label(for="input-credit-term")
+				| Срок кредита
+			.field__range-slider.range-slider
+				input.range-slider__input#input-credit-term(type="text" name="credit-term")
+			.field__tip
+
+		.field
+			label.field__label(for="input-credit-office")
+				| Офис получения кредита
+			select.field__select.select#input-credit-office(name="credit-office")
+				option Вариант 1
+				option Вариант 2
+				option Вариант 3
+			.field__tip
+				| Укажите адрес банка
+
+		.form__footer
+			a.form__footer__button-prev.button.button--gray-ghost(href="#")
+				+svg("arrow-left")
+			button.form__footer__button-next.button.button--red(type="submit")
+				| Продолжить

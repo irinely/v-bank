@@ -1,0 +1,91 @@
+form.form(method="POST")
+	.container
+		.field
+			label.field__label(for="input-employment")
+				| Введите код
+			select.field__select.select#input-employment(name="employment")
+				option Вариант 1
+				option Вариант 2
+				option Вариант 3
+			.field__tip
+				| Выберите тип вашей занятости
+
+		.field
+			label.field__label(for="input-company-name")
+				| Место работы
+			input.field__input.input#input-company-name(type="text" name="company-name")
+			.field__tip
+				| Укажите юридическое название вашей организации
+
+		.field
+			label.field__label(for="input-company-inn")
+				| ИНН организации
+			input.field__input.input#input-company-inn(type="text" name="company-inn")
+			.field__tip
+
+		.field
+			label.field__label(for="input-budget-company")
+				| Бюджетная организация
+			input.field__input.input#input-budget-company(type="text" name="budget-company")
+			.field__tip
+
+		.field
+			label.field__label(for="input-work-address")
+				| Фактический адрес места работы
+			input.field__input.input#input-work-address(type="text" name="word-address")
+			.field__tip
+
+		.field
+			label.field__label(for="input-work-phone")
+				| Рабочий телефон
+			input.field__input.input#input-work-phone(type="tel" name="work-phone" placeholder="+7 (___)___-__-__")
+			.field__tip
+
+		.field
+			label.field__label(for="input-work-position")
+				| Должность/статус
+			input.field__input.input#input-work-position(type="text" name="work-position")
+			.field__tip
+
+		.field
+			label.field__label(for="input-current-work-experience")
+				| Стаж на&nbsp;текущем месте работы
+			select.field__select.select#input-current-work-experience(name="current-work-experience")
+				option Вариант 1
+				option Вариант 2
+				option Вариант 3
+			.field__tip
+				| Выберите ваш стаж
+
+		.field
+			label.field__label(for="input-total-experience")
+				| Общий трудовой стаж
+			select.field__select.select#input-total-experience(name="total-experience")
+				option Вариант 1
+				option Вариант 2
+				option Вариант 3
+			.field__tip
+				| Выберите значение
+
+		.field
+			label.field__label(for="input-amount-of-income")
+				| Размер дохода
+			input.field__input.input#input-amount-of-income(type="text" name="amount-of-income")
+			.field__tip
+				| Среднее значение за&nbsp;последние 4&nbsp;мес. За&nbsp;вычетом НДФЛ
+
+		.field
+			label.field__label(for="input-income-method")
+				| Способ получения дохода
+			select.field__select.select#input-income-method(name="income-method")
+				option Вариант 1
+				option Вариант 2
+				option Вариант 3
+			.field__tip
+				| Выберите значение
+
+		.form__footer
+			a.form__footer__button-prev.button.button--gray-ghost(href="#")
+				+svg("arrow-left")
+			button.form__footer__button-next.button.button--red(type="submit")
+				| Продолжить

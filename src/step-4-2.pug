@@ -1,0 +1,11 @@
+extends pug/base
+
+append vars
+	- title = 'Шаг 4 из 5. Запрашиваемые параметры'
+
+block content
+	include pug/header
+	include pug/card-info
+	+progress(4.2)
+	include pug/step-4-2
+	include pug/footer

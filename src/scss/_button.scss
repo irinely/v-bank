@@ -45,11 +45,13 @@
 
 		&:hover {
 			border-color: $color-slate-gray;
+			color: $color-white;
 			background-color: $color-slate-gray;
 		}
 
 		&:active {
 			border-color: $color-slate-gray;
+			color: $color-white;
 			background-color: $color-slate-gray;
 		}
 	}
@@ -86,11 +88,13 @@
 
 		&:hover {
 			border-color: $color-stiletto;
+			color: $color-white;
 			background-color: $color-stiletto;
 		}
 
 		&:active {
 			border-color: $color-metallic-copper;
+			color: $color-white;
 			background-color: $color-burnt-umber;
 		}
 	}

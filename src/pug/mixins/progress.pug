@@ -1,5 +1,5 @@
 mixin progress(step)
-	.progress(class=`progress--step-${step}`)
+	.progress(class=`progress--step-${step.toString().replace('.', '-')}`)
 		.container
 			.progress__line
 				.progress__passed

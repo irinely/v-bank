@@ -1,0 +1,11 @@
+extends pug/base
+
+append vars
+	- title = 'Шаг 2 из 5. Сведения о занятости'
+
+block content
+	include pug/header
+	include pug/card-info
+	+progress(2)
+	include pug/step-2
+	include pug/footer
