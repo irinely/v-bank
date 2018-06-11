@@ -4,30 +4,5 @@ append vars
 	//- ...
 
 block content
-	.field
-		label.field__label(for="input-name")
-			| Имя
-		input.field__input.input#input-name(type="text" name="name")
-		.field__tip
-			| Укажите точно как в паспорте
-
-	.field
-		label.field__label(for="input-surname")
-			| Фамилия
-		input.field__input.input#input-surname(type="text" name="surname")
-		.field__tip
-			| Укажите точно как в паспорте
-
-	.field
-		label.field__label(for="input-patronymic")
-			| Отчество
-		input.field__input.input#input-patronymic(type="text" name="patronymic")
-		.field__tip
-			| Укажите точно как в паспорте. Если отчество отсутствует - поставьте прочерк
-
-	.field
-		label.field__checkbox.checkbox(tabindex="0")
-			input.checkbox__input(type="checkbox" name="surname-changed")
-			.checkbox__mark
-			.checkbox__text
-				| Фамилия изменялась?
+	include pug/header
+	include pug/footer

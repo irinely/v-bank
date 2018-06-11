@@ -1,0 +1,44 @@
+.footer {
+	padding: 36px 0;
+	background-color: $color-white;
+
+	&__info {
+		display: flex;
+		align-items: center;
+		padding-top: 12px;
+
+		&__button {
+			margin-right: 45px;
+			width: 260px;
+		}
+
+		&__item {
+			margin-right: 85px;
+
+			&:first-child {
+				margin-right: 72px;
+			}
+		}
+
+		&__phone {
+			font-weight: 700;
+			font-size: 26px;
+			line-height: 1.85;
+			color: $color-mine-shaft;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 1.5;
+			color: $color-silver-chalice;
+		}
+	}
+
+	&__copyright {
+		margin-top: 43px;
+		padding-right: 135px;
+		font-size: 12px;
+		line-height: 24px;
+		color: $color-silver-chalice;
+	}
+}
