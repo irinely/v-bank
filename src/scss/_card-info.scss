@@ -8,39 +8,49 @@
 		font-weight: 700;
 		font-size: 48px;
 		line-height: 48px;
-		color: $color-mine-shaft;
 	}
 
 	&__subtitle {
 		font-size: 32px;
 		line-height: 48px;
-		color: $color-mine-shaft;
 	}
 
 	&__wrapper {
 		display: flex;
-		justify-content: space-between;
 		margin-top: 64px;
+	}
+
+	&__left-column {
+		flex: 0 0 auto;
+		margin-right: 56px;
+		width: 240px;
+	}
+
+	&__right-column {
+		flex: 1 1 auto;
 	}
 
 	&__image {
 		display: block;
-		margin-right: 15px;
-		width: 240px;
-		height: 151px;
-		object-fit: cover;
+		width: 100%;
+		height: auto;
+		object-fit: contain;
 	}
 
 	&__list {
 		display: flex;
 		margin-bottom: 24px;
 
-		&__col-1 {
-			margin-right: 59px;
-		}
+		&__column {
+			&:first-child {
+				flex: 0 0 auto;
+				margin-right: 58px;
+				width: 304px;
+			}
 
-		&__col-2 {
-			margin-right: 55px;
+			&:last-child {
+				flex: 1 1 auto;
+			}
 		}
 	}
 
@@ -48,13 +58,15 @@
 		margin-bottom: 32px;
 
 		&__title {
+			position: relative;
+			padding-left: 26px;
 			font-size: 19px;
 			line-height: 24px;
-			color: $color-mine-shaft;
 
 			&::before {
 				content: "—";
-				margin-right: 12px;
+				position: absolute;
+				left: 0;
 				font-size: 19px;
 				line-height: 24px;
 				color: $color-mojo;
@@ -65,15 +77,11 @@
 			padding-left: 26px;
 			font-size: 32px;
 			line-height: 48px;
-			color: $color-mine-shaft;
 		}
 	}
 
 	&__description {
-		margin-bottom: 24px;
-		padding-left: 31%;
 		font-size: 19px;
 		line-height: 24px;
-		color: $color-mine-shaft;
 	}
 }
