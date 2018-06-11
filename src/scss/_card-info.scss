@@ -1,0 +1,79 @@
+.card-info {
+	padding-top: 93px;
+	padding-bottom: 30px;
+
+	&__title {
+		margin-bottom: 15px;
+		font-family: $font-family-officinaSerifOSC;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 48px;
+		color: $color-mine-shaft;
+	}
+
+	&__subtitle {
+		font-size: 32px;
+		line-height: 48px;
+		color: $color-mine-shaft;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 64px;
+	}
+
+	&__image {
+		display: block;
+		margin-right: 15px;
+		width: 240px;
+		height: 151px;
+		object-fit: cover;
+	}
+
+	&__list {
+		display: flex;
+		margin-bottom: 24px;
+
+		&__col-1 {
+			margin-right: 59px;
+		}
+
+		&__col-2 {
+			margin-right: 55px;
+		}
+	}
+
+	&__item {
+		margin-bottom: 32px;
+
+		&__title {
+			font-size: 19px;
+			line-height: 24px;
+			color: $color-mine-shaft;
+
+			&::before {
+				content: "—";
+				margin-right: 12px;
+				font-size: 19px;
+				line-height: 24px;
+				color: $color-mojo;
+			}
+		}
+
+		&__text {
+			padding-left: 26px;
+			font-size: 32px;
+			line-height: 48px;
+			color: $color-mine-shaft;
+		}
+	}
+
+	&__description {
+		margin-bottom: 24px;
+		padding-left: 31%;
+		font-size: 19px;
+		line-height: 24px;
+		color: $color-mine-shaft;
+	}
+}
