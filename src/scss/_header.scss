@@ -1,0 +1,66 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 32px 100px;
+	box-shadow: 0 75px 70px rgba(227, 232, 239, 0.8);
+	background-color: $color-white;
+
+	&__logo {
+		display: block;
+		width: 240px;
+		height: 67px;
+
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		padding-top: 12px;
+
+		&__button {
+			margin-right: 45px;
+			border: solid 1px $color-mojo;
+			padding: 0;
+			width: 186px;
+			height: 48px;
+			font-size: 19px;
+			line-height: 2.53;
+			text-align: center;
+			text-decoration: none;
+			color: $color-mojo;
+			transition: background-color 0.2s ease, color 0.2s ease;
+
+			&:hover {
+				color: $color-white;
+				background-color: $color-mojo;
+			}
+		}
+
+		&__item {
+			margin-right: 23px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__phone {
+			font-weight: 700;
+			font-size: 22px;
+			line-height: 1.09;
+			color: $color-mine-shaft;
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 1.5;
+			color: $color-silver-chalice;
+		}
+	}
+}
