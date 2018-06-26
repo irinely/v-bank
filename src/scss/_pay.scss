@@ -1,0 +1,42 @@
+.pay {
+	padding-top: 141px;
+	background-color: $color-white;
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__image {
+		flex: 0 0 auto;
+		overflow: hidden;
+		margin-right: 140px;
+		width: 300px;
+		height: 436px;
+
+		img {
+			display: block;
+			width: 300px;
+			object-fit: contain;
+		}
+	}
+
+	&__info {
+		margin-top: 60px;
+
+		&__title {
+			margin-bottom: 34px;
+			font-family: $font-family-officinaSerifOSC;
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 1.08;
+			letter-spacing: normal;
+			color: $color-mine-shaft;
+		}
+
+		&__list {
+			font-size: 19px;
+			line-height: 1.26;
+			color: $color-mine-shaft;
+		}
+	}
+}
