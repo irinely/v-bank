@@ -1,0 +1,84 @@
+.main-banner {
+	margin-top: -132px;
+	background: url("../images/main.jpg") no-repeat;
+
+	.container {
+		position: relative;
+		padding-top: 132px;
+		height: 760px;
+	}
+
+	&__wrapper {
+		display: flex;
+		padding-top: 159px;
+	}
+
+	&__column {
+		margin-right: 40px;
+
+		img {
+			display: block;
+			width: 240px;
+			height: 152px;
+			object-fit: contain;
+		}
+
+		.button {
+			width: 314px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__title {
+		margin-top: 37px;
+		margin-bottom: 12px;
+		font-family: $font-family-officinaSerifOSC;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 1;
+		color: $color-white;
+	}
+
+	&__subtitle {
+		margin-bottom: 48px;
+		font-family: $font-family-officinaSerifOSC;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 1.09;
+		color: $color-white;
+	}
+
+	&__plate {
+		position: absolute;
+		left: 40px;
+		right: 40px;
+		bottom: -84px;
+		display: flex;
+		border-radius: 20px;
+		padding: 47px 30px;
+		height: 168px;
+		box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.1), 0 0 30px 0 rgba(0, 0, 0, 0.1);
+		background-color: $color-white;
+
+		&__item {
+			margin: 0 30px;
+			width: 240px;
+
+			&__title {
+				font-weight: 500;
+				font-size: 32px;
+				line-height: 1.5;
+				color: $color-mine-shaft;
+			}
+
+			&__text {
+				font-size: 19px;
+				line-height: 1.26;
+				color: $color-raven;
+			}
+		}
+	}
+}
