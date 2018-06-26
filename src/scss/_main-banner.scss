@@ -82,4 +82,54 @@
 			}
 		}
 	}
+
+	@media (max-width: 1023px) {
+		&__plate {
+			&__item {
+				&__title {
+					font-size: 23px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		&__wrapper {
+			display: block;
+			padding-top: 30px;
+			text-align: center;
+		}
+
+		&__column {
+			margin-right: 0;
+
+			img {
+				margin: 0 auto;
+			}
+
+			.button {
+				width: 288px;
+			}
+		}
+
+		&__plate {
+			position: static;
+			display: block;
+			margin-top: 40px;
+			padding: 20px 30px;
+			height: auto;
+			text-align: center;
+
+			&__item {
+				margin-right: 0;
+				margin-bottom: 20px;
+				margin-left: 0;
+				width: auto;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
 }
