@@ -22,9 +22,13 @@
 		}
 
 		&__phone {
-			font-weight: 700;
-			font-size: 26px;
-			line-height: 1.85;
+			a {
+				font-weight: 700;
+				font-size: 26px;
+				line-height: 1.85;
+				text-decoration: none;
+				color: $color-mine-shaft;
+			}
 		}
 
 		&__text {
@@ -40,5 +44,31 @@
 		font-size: 12px;
 		line-height: 24px;
 		color: $color-silver-chalice;
+	}
+
+	@media (max-width: 960px) {
+		&__info {
+			display: block;
+			padding-top: 0;
+
+			&__item {
+				margin-bottom: 15px;
+			}
+
+			&__button {
+				margin-right: 0;
+				width: 100%;
+			}
+
+			&__phone {
+				a {
+					font-size: 23px;
+				}
+			}
+		}
+
+		&__copyright {
+			padding-right: 0;
+		}
 	}
 }

@@ -72,4 +72,40 @@
 		margin: 0 auto;
 		width: 314px;
 	}
+
+	@media (max-width: 815px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		&__title {
+			font-size: 30px;
+		}
+
+		&__wrapper {
+			display: block;
+			margin-top: 20px;
+			margin-bottom: 30px;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&__item {
+			margin: 0 auto 20px;
+			width: auto;
+
+			&__icon {
+				margin-bottom: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.button {
+			width: 286px;
+		}
+	}
 }

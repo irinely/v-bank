@@ -38,9 +38,13 @@
 		}
 
 		&__phone {
-			font-weight: 700;
-			font-size: 22px;
-			line-height: 1.09;
+			a {
+				font-weight: 700;
+				font-size: 22px;
+				line-height: 1.09;
+				text-decoration: none;
+				color: $color-mine-shaft;
+			}
 		}
 
 		&__text {
@@ -78,7 +82,9 @@
 	@media (max-width: 490px) {
 		&__info {
 			&__phone {
-				font-size: 17px;
+				a {
+					font-size: 17px;
+				}
 			}
 		}
 	}
