@@ -1,0 +1,61 @@
+.advantages {
+	padding-top: 234px;
+	padding-bottom: 120px;
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__title {
+		padding-bottom: 16px;
+		font-family: $font-family-officinaSerifOSC;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 1.08;
+		color: $color-mine-shaft;
+	}
+
+	&__list {
+		p {
+			font-size: 19px;
+			line-height: 1.26;
+			color: $color-mine-shaft;
+		}
+	}
+
+	img {
+		display: block;
+		margin-top: 9px;
+		margin-right: 66px;
+		width: 372px;
+		height: 272px;
+		object-fit: contain;
+	}
+
+	&__plate {
+		margin-top: 70px;
+		border-radius: 10px;
+		padding: 31px 50px 29px;
+		width: 460px;
+		box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+		font-family: $font-family-officinaSerifMediumC;
+		font-weight: 500;
+		font-size: 19px;
+		line-height: 1.26;
+		color: $color-mine-shaft;
+		background-color: $color-white;
+
+		&:first-child {
+			margin-right: 40px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--bordered {
+			border: solid 3px $color-chalky;
+			box-shadow: none;
+		}
+	}
+}
