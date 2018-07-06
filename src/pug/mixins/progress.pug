@@ -1,25 +1,11 @@
 mixin progress(step)
-	.progress(class=`progress--step-${step.toString().replace('.', '-')}`)
+	.progress
 		.container
-			.progress__line
-				.progress__passed
-					.progress__flag
-						+svg("flag")
+			.progress__steps
+				.progress__step.visited
+				.progress__step.current
+				.progress__step
+				.progress__step
+				.progress__step
 			.progress__text
-				case step
-					when 1
-						| Шаг 1&nbsp;из&nbsp;5. Персональные данные
-					when 1.2
-						| Шаг 1 из 5. Подтверждение
-					when 2
-						| Шаг 2 из 5. Сведения о занятости
-					when 3
-						| Шаг 3 из 5. Дополнительные сведения
-					when 3.2
-						| Шаг 3 из 5. Подтверждение сведений
-					when 4
-						| Шаг 4 из 5. Запрашиваемые параметры
-					when 4.2
-						| Шаг 4 из 5. Запрашиваемые параметры
-					when 5
-						| Заявка отправлена
+				| Шаг #{step}&nbsp;из&nbsp;4
