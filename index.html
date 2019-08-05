@@ -4,50 +4,141 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-			}
-			
-			li {
-				margin-bottom: 0.5em;
-			}
-			
-			a,
-			a:visited {
-				color: blue;
-			}
-			
-		</style>
+		<title>Главная</title>
+		<link rel="stylesheet" href="css/main.css?v=1565014418990">
 	</head>
 	<body>
-		<ul>
-			<!--li-->
-			<!--	a(href="/step-1.html" target="_blank")-->
-			<!--		| (01_bankvenec_form) Шаг 1 из 5. Персональные данные-->
-			<!--li-->
-			<!--	a(href="/step-1-2.html" target="_blank")-->
-			<!--		| (02_bankvenec_form) Шаг 1 из 5. Подтверждение-->
-			<!--li-->
-			<!--	a(href="/step-2.html" target="_blank")-->
-			<!--		| (03_bankvenec_form) Шаг 2 из 5. Сведения о занятости-->
-			<!--li-->
-			<!--	a(href="/step-3.html" target="_blank")-->
-			<!--		| (04_bankvenec_form) Шаг 3 из 5. Дополнительные сведения-->
-			<!--li-->
-			<!--	a(href="/step-3-2.html" target="_blank")-->
-			<!--		| (05_bankvenec_form) Шаг 3 из 5. Подтверждение сведений-->
-			<!--li-->
-			<!--	a(href="/step-4.html" target="_blank")-->
-			<!--		| (06_bankvenec_form) Шаг 4 из 5. Запрашиваемые параметры-->
-			<!--li-->
-			<!--	a(href="/step-4-2.html" target="_blank")-->
-			<!--		| (07_bankvenec_form) Шаг 4 из 5. Запрашиваемые параметры-->
-			<!--li-->
-			<!--	a(href="/step-5.html" target="_blank")-->
-			<!--		| (08_bankvenec_form) Шаг 5 из 5. Заявка отправлена-->
-			<li><a href="/main.html" target="_blank">(09_bankvenec_form) Главная</a></li>
-			<li><a href="/steps.html" target="_blank">Шкала</a></li>
-		</ul>
+		<header class="header"><a class="header__logo" href="https://www.venets-bank.ru"><img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ВенецБанк"></a>
+			<div class="header__info"><a class="header__info__button button button--small button--red-ghost" href="#">Заказать звонок</a>
+				<div class="header__info__item">
+					<div class="header__info__phone"><a href="tel:88422555999">8 (8422) 555-999</a></div>
+					<div class="header__info__text">г. Ульяновск</div>
+				</div>
+				<div class="header__info__item">
+					<div class="header__info__phone"><a href="tel:88007075599">8 (800) 707-55-99</a></div>
+					<div class="header__info__text">Бесплатно по&nbsp;России</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-banner">
+			<div class="container">
+				<div class="main-banner__wrapper">
+					<div class="main-banner__column"><img src="images/card.png" srcset="images/card@2x.png 2x"></div>
+					<div class="main-banner__column">
+						<div class="main-banner__title">Заявка на карту</div>
+						<div class="main-banner__subtitle">Visa Classic 100 дней без %</div><a class="button button--red" href="#">Заказать сейчас</a>
+					</div>
+				</div>
+				<div class="main-banner__plate">
+					<div class="main-banner__plate__item">
+						<div class="main-banner__plate__item__title">до&nbsp;300&nbsp;000&nbsp;руб.</div>
+						<div class="main-banner__plate__item__text">Кредитный лимит</div>
+					</div>
+					<div class="main-banner__plate__item">
+						<div class="main-banner__plate__item__title">90&nbsp;дней, 0%</div>
+						<div class="main-banner__plate__item__text">Приветственный период</div>
+					</div>
+					<div class="main-banner__plate__item">
+						<div class="main-banner__plate__item__title">до&nbsp;55&nbsp;дней</div>
+						<div class="main-banner__plate__item__text">Льготный период</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="advantages">
+			<div class="container">
+				<div class="advantages__wrapper"><img src="images/block-advantages.png" alt="">
+					<div class="advantages__info">
+						<div class="advantages__title">Преимущества <br>
+							нашей карты
+						</div>
+						<div class="advantages__list">
+							<p>Без залога и&nbsp;поручителей</p>
+							<p>Досрочное погашение&nbsp;&mdash; в&nbsp;любое время, без штрафных комиссий</p>
+							<p>Скидки и&nbsp;специальные предложения при оплате картами MasterCard и&nbsp;Maestro</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="steps">
+			<div class="container">
+				<div class="steps__title">Оформите карту онлайн <br>
+					за&nbsp;3&nbsp;простых шага
+				</div>
+				<div class="steps__wrapper">
+					<div class="steps__item">
+						<div class="steps__item__icon">
+							<svg>
+								<use xlink:href="images/sprites.svg#step-1"></use>
+							</svg>
+						</div>
+						<div class="steps__item__title">Заполните онлайн-заявку</div>
+						<div class="steps__item__text">За 7 минут</div>
+					</div>
+					<div class="steps__item">
+						<div class="steps__item__icon">
+							<svg>
+								<use xlink:href="images/sprites.svg#step-2"></use>
+							</svg>
+						</div>
+						<div class="steps__item__title">Моментальное одобрение</div>
+						<div class="steps__item__text">Узнайте решение онлайн в&nbsp;течение 2-х минут</div>
+					</div>
+					<div class="steps__item">
+						<div class="steps__item__icon">
+							<svg>
+								<use xlink:href="images/sprites.svg#step-3"></use>
+							</svg>
+						</div>
+						<div class="steps__item__title">Бесплатно доставим карту</div>
+						<div class="steps__item__text">В&nbsp;удобное для вас<br>
+							отделение
+						</div>
+					</div>
+				</div><a class="button button--red" href="#">Заказать сейчас</a>
+			</div>
+		</div>
+		<div class="pay">
+			<div class="container">
+				<div class="pay__wrapper">
+					<div class="pay__image"><img src="images/phone.png" srcset="images/phone@2x.png 2x" alt=""></div>
+					<div class="pay__info">
+						<div class="pay__info__title">Минимальный <br>
+							платеж&nbsp;5%
+						</div>
+						<div class="pay__info__list">
+							<p>
+								От&nbsp;задолженности по&nbsp;кредиту на&nbsp;первое число месяца плюс
+								начисленный процент за&nbsp;пользование кредитом
+							</p>
+							<p>СМС-информирование</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__info">
+					<div class="footer__info__item">
+						<div class="footer__info__phone"><a href="tel:88007075599">8 (800) 707-55-99</a></div>
+						<div class="footer__info__text">Бесплатно по&nbsp;России</div>
+					</div>
+					<div class="footer__info__item">
+						<div class="footer__info__phone"><a href="tel:88422555999">8 (8422) 555-999</a></div>
+						<div class="footer__info__text">г. Ульяновск</div>
+					</div><a class="footer__info__button button button--gray-ghost" href="#">Заказать звонок</a>
+				</div>
+				<div class="footer__copyright">
+					&copy;&nbsp;2008&ndash;2015&nbsp;АО Банк &laquo;Венец&raquo;, лицензия
+					ЦБ&nbsp;РФ &#8470;&nbsp;524 от&nbsp;19.12.2014&nbsp;г. Информация о&nbsp;лицах,
+					под контролем либо значительным влиянием которых находится Банк Информация
+					о&nbsp;максимальных процентных ставках по&nbsp;вкладам физических лиц
+				</div>
+			</div>
+		</footer>
+		<script src="js/vendor.js?v=1565014418990"></script>
+		<script src="js/main.js?v=1565014418990"></script>
 	</body>
 </html>
