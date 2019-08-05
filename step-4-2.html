@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>Шаг 4 из 5. Запрашиваемые параметры</title>
+		<link rel="stylesheet" href="/css/main.css?v=1565014420841">
+	</head>
+	<body>
+		<header class="header"><a class="header__logo" href="https://www.venets-bank.ru"><img src="/images/logo.png" srcset="/images/logo@2x.png 2x" alt="ВенецБанк"></a>
+			<div class="header__info"><a class="header__info__button button button--small button--red-ghost" href="#">Заказать звонок</a>
+				<div class="header__info__item">
+					<div class="header__info__phone"><a href="tel:88422555999">8 (8422) 555-999</a></div>
+					<div class="header__info__text">г. Ульяновск</div>
+				</div>
+				<div class="header__info__item">
+					<div class="header__info__phone"><a href="tel:88007075599">8 (800) 707-55-99</a></div>
+					<div class="header__info__text">Бесплатно по&nbsp;России</div>
+				</div>
+			</div>
+		</header>
+		<div class="progress">
+			<div class="container">
+				<div class="progress__steps">
+					<div class="progress__step visited"></div>
+					<div class="progress__step current"></div>
+					<div class="progress__step"></div>
+					<div class="progress__step"></div>
+					<div class="progress__step"></div>
+				</div>
+				<div class="progress__text">Шаг 4.2&nbsp;из&nbsp;4</div>
+			</div>
+		</div>
+		<form class="form" method="POST">
+			<div class="container">
+				<div class="field">
+					<label class="field__label" for="input-amount-of-credit">Сумма кредита</label>
+					<input class="field__input input" id="input-amount-of-credit" type="text" name="amount-of-credit">
+					<div class="field__tip">Указываемая сумма в&nbsp;рублях</div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-credit-office">Офис получения кредита</label>
+					<select class="field__select select" id="input-credit-office" name="credit-office">
+						<option>Вариант 1</option>
+						<option>Вариант 2</option>
+						<option>Вариант 3</option>
+					</select>
+					<div class="field__tip">Укажите адрес банка</div>
+				</div>
+				<div class="form__footer"><a class="form__footer__button-prev button button--gray-ghost" href="#">
+						<svg>
+							<use xlink:href="/images/sprites.svg#arrow-left"></use>
+						</svg></a>
+					<button class="form__footer__button-next button button--red" type="submit">Продолжить</button>
+				</div>
+			</div>
+		</form>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__info">
+					<div class="footer__info__item">
+						<div class="footer__info__phone"><a href="tel:88007075599">8 (800) 707-55-99</a></div>
+						<div class="footer__info__text">Бесплатно по&nbsp;России</div>
+					</div>
+					<div class="footer__info__item">
+						<div class="footer__info__phone"><a href="tel:88422555999">8 (8422) 555-999</a></div>
+						<div class="footer__info__text">г. Ульяновск</div>
+					</div><a class="footer__info__button button button--gray-ghost" href="#">Заказать звонок</a>
+				</div>
+				<div class="footer__copyright">
+					&copy;&nbsp;2008&ndash;2015&nbsp;АО Банк &laquo;Венец&raquo;, лицензия
+					ЦБ&nbsp;РФ &#8470;&nbsp;524 от&nbsp;19.12.2014&nbsp;г. Информация о&nbsp;лицах,
+					под контролем либо значительным влиянием которых находится Банк Информация
+					о&nbsp;максимальных процентных ставках по&nbsp;вкладам физических лиц
+				</div>
+			</div>
+		</footer>
+		<script src="/js/vendor.js?v=1565014420841"></script>
+		<script src="/js/main.js?v=1565014420841"></script>
+	</body>
+</html>

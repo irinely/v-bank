@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<title>Шаг 1 из 5. Персональные данные</title>
+		<link rel="stylesheet" href="/css/main.css?v=1565014419216">
+	</head>
+	<body>
+		<header class="header"><a class="header__logo" href="https://www.venets-bank.ru"><img src="/images/logo.png" srcset="/images/logo@2x.png 2x" alt="ВенецБанк"></a>
+			<div class="header__info"><a class="header__info__button button button--small button--red-ghost" href="#">Заказать звонок</a>
+				<div class="header__info__item">
+					<div class="header__info__phone"><a href="tel:88422555999">8 (8422) 555-999</a></div>
+					<div class="header__info__text">г. Ульяновск</div>
+				</div>
+				<div class="header__info__item">
+					<div class="header__info__phone"><a href="tel:88007075599">8 (800) 707-55-99</a></div>
+					<div class="header__info__text">Бесплатно по&nbsp;России</div>
+				</div>
+			</div>
+		</header>
+		<div class="progress">
+			<div class="container">
+				<div class="progress__steps">
+					<div class="progress__step visited"></div>
+					<div class="progress__step current"></div>
+					<div class="progress__step"></div>
+					<div class="progress__step"></div>
+					<div class="progress__step"></div>
+				</div>
+				<div class="progress__text">Шаг 1&nbsp;из&nbsp;4</div>
+			</div>
+		</div>
+		<form class="form" method="POST">
+			<div class="container">
+				<div class="field">
+					<label class="field__label" for="input-name">Имя</label>
+					<input class="field__input input" id="input-name" type="text" name="name">
+					<div class="field__tip">Укажите точно как в&nbsp;паспорте</div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-surname">Фамилия</label>
+					<input class="field__input input" id="input-surname" type="text" name="surname">
+					<div class="field__tip">Укажите точно как в&nbsp;паспорте</div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-patronymic">Отчество</label>
+					<input class="field__input input" id="input-patronymic" type="text" name="patronymic">
+					<div class="field__tip">Укажите точно как в&nbsp;паспорте. Если отчество отсутствует&nbsp;&mdash; поставьте прочерк</div>
+				</div>
+				<div class="field">
+					<label class="field__checkbox checkbox" tabindex="0">
+						<input class="checkbox__input" type="checkbox" name="surname-changed" tabindex="-1">
+						<div class="checkbox__mark"></div>
+						<div class="checkbox__text">Фамилия изменялась?</div>
+					</label>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-date-of-birth">Дата рождения</label>
+					<input class="field__input input" id="input-date-of-birth" type="text" name="date-of-birth" placeholder="00.00.0000">
+					<div class="field__tip">Укажите точно как в&nbsp;паспорте</div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-place-of-birth">Дата рождения</label>
+					<input class="field__input input" id="input-place-of-birth" type="text" name="place-of-birth">
+					<div class="field__tip">Укажите точно как в&nbsp;паспорте</div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-passport">Дата рождения</label>
+					<input class="field__input input" id="input-passport" type="text" name="passport" placeholder="серия / номер">
+					<div class="field__tip"></div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-department-code">Дата рождения</label>
+					<input class="field__input input" id="input-department-code" type="text" name="department-code" placeholder="000">
+					<div class="field__tip"></div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-date-of-issue">Дата выдачи пасспорта</label>
+					<input class="field__input input" id="input-date-of-issue" type="text" name="date-of-issue" placeholder="00.00.0000">
+					<div class="field__tip"></div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-snils">СНИЛС</label>
+					<input class="field__input input" id="input-snils" type="text" name="snils" placeholder="000 000 000">
+					<div class="field__tip"></div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-place-of-registration">Место регистрации</label>
+					<input class="field__input input" id="input-place-of-registration" type="text" name="place-of-registration">
+					<div class="field__tip">Укажите точно как в&nbsp;паспорте</div>
+				</div>
+				<div class="field">
+					<label class="field__checkbox checkbox" tabindex="0">
+						<input class="checkbox__input" type="checkbox" name="registration-same-as-residence" tabindex="-1">
+						<div class="checkbox__mark"></div>
+						<div class="checkbox__text">Место регистрации совпадает с&nbsp;местом проживания?</div>
+					</label>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-phone">Номер мобильного телефона</label>
+					<input class="field__input input" id="input-phone" type="tel" name="phone" placeholder="+7 (___)___-__-__">
+					<div class="field__tip">Укажите номер телефона. Пример: +7(910) 123-45-67. Убедитесь, что телефон введен корректно, т.к.&nbsp;на&nbsp;него будет выслана SMS с&nbsp;решением банка</div>
+				</div>
+				<div class="field">
+					<label class="field__label" for="input-email">Электронная почта</label>
+					<input class="field__input input" id="input-email" type="email" name="email">
+					<div class="field__tip">Укажите email. Пример: vashapochta@domain.ru. Указывайте существующий email, т.к.&nbsp;на&nbsp;него может быть направлена ценная для вас информация по&nbsp;заявке</div>
+				</div>
+				<div class="form__footer">
+					<button class="form__footer__button-next button button--red" type="submit">Продолжить</button>
+				</div>
+			</div>
+		</form>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__info">
+					<div class="footer__info__item">
+						<div class="footer__info__phone"><a href="tel:88007075599">8 (800) 707-55-99</a></div>
+						<div class="footer__info__text">Бесплатно по&nbsp;России</div>
+					</div>
+					<div class="footer__info__item">
+						<div class="footer__info__phone"><a href="tel:88422555999">8 (8422) 555-999</a></div>
+						<div class="footer__info__text">г. Ульяновск</div>
+					</div><a class="footer__info__button button button--gray-ghost" href="#">Заказать звонок</a>
+				</div>
+				<div class="footer__copyright">
+					&copy;&nbsp;2008&ndash;2015&nbsp;АО Банк &laquo;Венец&raquo;, лицензия
+					ЦБ&nbsp;РФ &#8470;&nbsp;524 от&nbsp;19.12.2014&nbsp;г. Информация о&nbsp;лицах,
+					под контролем либо значительным влиянием которых находится Банк Информация
+					о&nbsp;максимальных процентных ставках по&nbsp;вкладам физических лиц
+				</div>
+			</div>
+		</footer>
+		<script src="/js/vendor.js?v=1565014419216"></script>
+		<script src="/js/main.js?v=1565014419216"></script>
+	</body>
+</html>
